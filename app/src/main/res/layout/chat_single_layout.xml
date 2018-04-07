@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_single_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="horizontal"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chat_single_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/user2"
+        />
+
+    <TextView
+        android:id="@+id/chat_single_last_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chat_single_image"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/chat_single_image"
+        android:layout_toRightOf="@+id/chat_single_image"
+        android:text="User's Status"
+        android:textSize="14sp"
+        />
+
+    <ImageView
+        android:id="@+id/chat_single_online"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignBottom="@+id/chat_single_image"
+        android:layout_alignEnd="@+id/chat_single_image"
+        android:layout_alignRight="@+id/chat_single_image"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:visibility="invisible"
+        app:srcCompat="@mipmap/ic_online"
+        />
+
+    <TextView
+        android:id="@+id/chat_single_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chat_single_last_msg"
+        android:layout_toEndOf="@+id/chat_single_image"
+        android:layout_toRightOf="@+id/chat_single_image"
+        android:text="Username"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/chat_single_image"
+        android:background="#bdbdbd"
+        />
+
+
+</RelativeLayout>

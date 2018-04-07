@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/friend_single_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="horizontal"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/friends_single_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/user2"
+        />
+
+    <ImageView
+        android:id="@+id/chat_single_online"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignBottom="@+id/friends_single_image"
+        android:layout_alignEnd="@+id/friends_single_image"
+        android:layout_alignRight="@+id/friends_single_image"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:visibility="invisible"
+        app:srcCompat="@mipmap/ic_online"
+        />
+
+
+    <TextView
+        android:id="@+id/friend_single_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toEndOf="@+id/friends_single_image"
+        android:layout_toRightOf="@+id/friends_single_image"
+        android:text="username"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        />
+
+    <ImageButton
+        android:id="@+id/friends_single_send_message_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_call_gray"
+        />
+
+    <ImageButton
+        android:id="@+id/friends_single_send_message_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_call_green"
+        />
+
+    <View
+        android:id="@+id/request_horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/friends_single_image"
+        android:background="#bdbdbd"
+        />
+
+
+</RelativeLayout>

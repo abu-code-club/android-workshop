@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_single_layout_g"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginStart="8dp"
+    android:background="@drawable/message_text_bg_g"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+
+    <TextView
+        android:id="@+id/message_single_text_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message Going.."
+        android:textColor="@color/colorText2"
+        />
+
+    <TextView
+        android:id="@+id/message_single_layout_g_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:text="14:45"
+        android:textColor="@color/colorText3"
+
+        android:textSize="12sp"
+        />
+
+
+</LinearLayout>
